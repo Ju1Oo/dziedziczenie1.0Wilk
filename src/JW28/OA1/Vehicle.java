@@ -14,11 +14,11 @@ package JW28.OA1;
         this.owner = owner;
     }
 
-    public void displayInfo()
+    protected void displayInfo()
     {
         System.out.println(" <------ Dane Pojazdu ------>");
         owner.displayOwner();
-        System.out.println(brand + " " + model);
-        System.out.println("rok produkcji: " + yearOfProduction);
+        System.out.println(this.brand + " " + this.model);
+        System.out.println("rok produkcji: " + this.yearOfProduction);
     }
 }

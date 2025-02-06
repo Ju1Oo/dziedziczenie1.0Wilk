@@ -12,7 +12,7 @@ public class Owner {
 
     public void displayOwner()
     {
-        System.out.println("Właściciel: " + name + " " + surname);
+        System.out.println("Właściciel: " + this.name + " " + this.surname);
     }
 
     public String getName() {
