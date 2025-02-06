@@ -1,6 +1,7 @@
 package JW28.OA1;
 
  public abstract class Vehicle {
+
     private String brand;
     private String model;
     private int yearOfProduction;

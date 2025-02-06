@@ -11,7 +11,7 @@ public class Motorcycle extends GroundVehicle {
     public void displayInfo()
     {
         super.displayInfo();
-        System.out.println("typ motocykla: " + motorcycleType);
+        System.out.println("typ motocykla: " + this.motorcycleType);
 
     }
 
