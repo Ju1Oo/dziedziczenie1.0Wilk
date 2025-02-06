@@ -10,6 +10,11 @@ public class Owner {
         this.surname = surname;
     }
 
+    public void displayOwner()
+    {
+        System.out.println("Właściciel: " + name + " " + surname);
+    }
+
     public String getName() {
         return name;
     }
