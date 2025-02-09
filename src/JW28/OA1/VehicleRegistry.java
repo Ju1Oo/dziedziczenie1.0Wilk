@@ -164,7 +164,7 @@ public class VehicleRegistry {
             System.out.println("----------------------------");
         }
     }
-    //nie wywalaj tych komentarzy bo moge zapomniec jakt to dziala
+                                                                                                    //nie wywalaj tych komentarzy bo moge zapomniec jakt to dziala
     public void displayVehiclesByType(Class<? extends Vehicle> vehicleType) {                       //Dowolna klasa dziedzicząca z Vehicle    //<> - Generyk dowolny typ
         for (Vehicle vehicle : vehicles) {
             if (vehicleType.isInstance(vehicle)) {                                                  //klasy bedace instancja vehicleType dzidziczacego z Vehicle
