@@ -123,7 +123,7 @@ public class VehicleRegistry {
                 System.out.println("Podaj typ motocykla: ");
                 String motorcycleType = scanner.nextLine();
 
-                addVehicle(new Motorcycle(brand, model, year, owner, mileageM, registrationM, colorM, maxVelocityM));
+                addVehicle(new Motorcycle(brand, model, year, owner, mileageM, registrationM, colorM, maxVelocityM,motorcycleType));
                 break;
 
             case 6:
