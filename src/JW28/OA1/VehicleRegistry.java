@@ -12,7 +12,7 @@ public class VehicleRegistry {
         vehicle.displayInfo();
     }
 
-    public void addVehicleFromUser() {                                      // Jebac nextInt trzeba dodac nextLine po kazdym bo sie buguje XDDDDDDDDDD
+    public void addVehicleFromUser() {                                      // Jebac nextInt() trzeba dodac nextLine() po kazdym bo sie buguje XDDDDDDDDDD
         System.out.println("<------ Podaj typ pojazdu ------>");
         System.out.println("        1: Auto");
         System.out.println("        2: Samolot");
@@ -84,10 +84,8 @@ public class VehicleRegistry {
                 System.out.println("Podaj średnicę wirnika: ");
                 int rotorDiameter = scanner.nextInt();
                 System.out.println("Czy posiada autopilota? (true/false): ");
-                boolean hasAutoPilot = scanner.nextBoolean();
-                scanner.nextLine();
 
-                addVehicle(new Helicopter(brand, model, year, owner, maxAltitudeH, maxSpeedH, rotorDiameter, hasAutoPilot));
+                addVehicle(new Helicopter(brand, model, year, owner, maxAltitudeH, maxSpeedH, rotorDiameter));
                 break;
 
             case 4:
@@ -160,12 +158,19 @@ public class VehicleRegistry {
         }
     }
 
-    public void displayAllVehicles() {
+    public void displayAllVehicles() {          //wykorzystanie polimorfizmu do wyświetlania
         for (Vehicle vehicle : vehicles) {
             vehicle.displayInfo();
             System.out.println("----------------------------");
         }
     }
-
-
+    //nie wywalaj tych komentarzy bo moge zapomniec jakt to dziala
+    public void displayVehiclesByType(Class<? extends Vehicle> vehicleType) {                       //Dowolna klasa dziedzicząca z Vehicle    //<> - Generyk dowolny typ
+        for (Vehicle vehicle : vehicles) {
+            if (vehicleType.isInstance(vehicle)) {                                                  //klasy bedace instancja vehicleType dzidziczacego z Vehicle
+                vehicle.displayInfo();
+                System.out.println("----------------------------");
+            }
+        }
+    }
 }

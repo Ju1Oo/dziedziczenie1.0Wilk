@@ -13,7 +13,7 @@ public class Truck extends GroundVehicle {
     public void displayInfo()
     {
         super.displayInfo();
-        System.out.println("maksymalny ładonek: " + this.maxLoadInKg + "kg lub" + this.cargoCapacity + "m^2");
+        System.out.println("maksymalny ładonek: " + this.maxLoadInKg + "kg lub " + this.cargoCapacity + "m^2");
     }
 
 }

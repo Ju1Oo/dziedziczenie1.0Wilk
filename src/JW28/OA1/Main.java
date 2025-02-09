@@ -7,6 +7,5 @@ public class Main {
        UserInterface program = new UserInterface();
 
        program.interfaceLoop();
-
     }
 }
