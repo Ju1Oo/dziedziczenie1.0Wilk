@@ -1,6 +1,6 @@
 package JW28.OA1;
 
-public class GroundVehicle extends  Vehicle{
+public abstract class GroundVehicle extends  Vehicle{
 
     private int mileageInKm;
     private String registration;

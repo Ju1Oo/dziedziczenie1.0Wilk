@@ -1,6 +1,6 @@
 package JW28.OA1;
 
-public class WaterVehicle extends Vehicle{
+public abstract class WaterVehicle extends Vehicle{
 
     private String registration;
     private int weightInKg;
